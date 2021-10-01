@@ -8,7 +8,26 @@
     <link href="./css/styles.css" rel="stylesheet">
 </head>
 <body>
-    
+    <div class="button-container">
+    <button id='library'>Display Library</button>
+    <button id="displayBookForm">Add new Book</button>
+    </div>
+    <div id="book-card-holder" class="flex">
+
+    </div>
+    <div class='hidden' id="form-container">
+        <form id="new-book-form" name="bookForm" class="flex" target="#">
+            <label for="title">Title: </label>
+                <input name="title" id="title" type="text" required>
+            <label for="author">Author: </label>
+                <input name="author" id="author" type="text" required>
+            <label for="pages">Number of pages: </label>
+                <input name="pages" id="pages" type="number"required>
+            <label for="read">Read?</label>
+                <input name="read" id="read" type="checkbox" value="true">
+            <button for='new-book-form' type="submit">Submit</button>
+        </form>
+        </div>
 </body>
 <script src="./objectLibrary.js"></script>
 </html>

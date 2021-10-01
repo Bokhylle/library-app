@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: gentium;
+    src: url(../font/GentiumBookBasic-Bold.ttf);
+}
+html {
+    height: 100vh;
+    width: 100%;
+}
+body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: antiquewhite;
+}
+label {
+    user-select: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.flex {
+    display: flex;
+}
+.hidden {
+    display: none;
+}
+#displayBookForm {
+
+    width: 9em;
+    top: 10px
+}
+#form-container {
+    overflow: hidden;
+    position: absolute;
+    height: 23em;
+    width: 20em;
+    max-width: 400px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 5em;
+    padding: 20px;
+    border-style: solid;
+    border-radius: 7px;
+    background-image: url(../img/bookcover.jpg);
+    background-size: cover;
+}
+#new-book-form {
+    flex-direction: column;
+    color: antiquewhite;
+    line-height: 200%;
+    font-size: 1.3em;
+
+}
+#new-book-form input {
+    font-size: 1.5em;
+    background-color: transparent;
+
+    font-family: gentium;
+    border-style: none;
+}
+#new-book-form input {
+    font-size: 1.5em;
+
+    position: relative;
+    
+    background: linear-gradient(178deg, #f7e8cb 0%,#fce494 38%,#7d5b36 76%,#5b5228 90%); /* W3C */
+    background-clip: text;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+  }
+  
+  #new-book-form input:after {
+    background: none;
+    content: attr(data-text);
+    left: 0;
+    position: absolute;
+    text-shadow: 0px -1px #5b5228, 0px 1px 1px #fce494;
+    top: 0;
+    z-index: -1;
+  }
+  input#pages {
+      font-size: 1.1em;
+  }
+
+input:focus-visible {
+    outline: none;
+}
+#new-book-form button {
+    width: 6em;
+    align-self: center;
+    z-index: 2;
+}
+.button-container {
+    position: fixed;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    right: 0;
+    left: 0;
+    width: 100%
+}
+.card {
+    position: relative;
+    width: 50%;
+    max-width: 400px;
+    min-width: 300px;
+    height: 40%;
+    background-color: bisque;
+    border-radius: 10px;
+}
+.deleteBtn {
+    position: absolute;
+    display: block;
+    right: 10px;
+    top: 10px;
+    width: 2em;
+    height: 2em;
+    background-image: url(../img/delete_forever_black_24dp.svg);
+    background-size: cover;
+}
+.readBtn {
+    width: 7em;
+    height: 1.5em;
+    margin: 0 0 0 10px;
+}
+.readBanner {
+    text-align: center;
+    height: 26%;
+    width: 60%;
+    position: absolute;
+    font-size: 80px;
+    top: 50%;
+    left: 50%;
+    margin-top: -13%;
+    margin-left: -30%;
+    transform: rotate(-45deg);
+    color: red;
+    opacity: 50%;
+}
+.card-info {
+    height: auto;
+    width: 100%;
+    padding: 10px;
+    white-space: pre;
+    font-size: 20px;
+    line-height: 30px;
+}
+h1.card-info {
+    font-size: 35px;
+}
+#book-card-holder {
+    padding-top: 10%;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: aliceblue;
+    height: 100%;
+    gap: 10px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
